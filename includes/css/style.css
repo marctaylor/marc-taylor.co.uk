@@ -202,6 +202,9 @@
     body {
       font-size: 12px;
     }
+    body > header {
+      display: none;
+    }
     [type="intro"], footer {
       font-size: 27px;
       display: block;

@@ -64,13 +64,13 @@
     margin: 12% auto 12% auto;
     max-width: 1500px;
     padding-left: 90px;
-    padding-right: 90px;
+    padding-right: 72px;
   }
-  mt-feature, footer {
+  [type="intro"], footer {
     font-size: 75px;
     display: block;
   }
-  mt-feature {
+  [type="intro"] {
     padding-bottom: 36px;
   }
   footer ul {
@@ -81,6 +81,7 @@
   }
   section ul {
     list-style: none;
+    font-size: 18px;
   }
   section li {
     padding: 0 0 3px 24px;
@@ -101,13 +102,13 @@
     margin-bottom: 36px;
   }
   [type="panel"] {
-    width: 33%;
     display: inline-block;
     vertical-align: top;
+    margin-right: 18px;
   }
   [type="panel"] picture {
     padding: 12px;
-    background: #fff;
+    background: rgba(255,255,255,0.34);
     display: block;
     margin-bottom: 18px;
   }
@@ -150,25 +151,32 @@
     position: relative;
     z-index: -1;
   }
+  [prominence="2"] {
+    width: calc(49% - 18px);
+  }
+  [prominence="3"] {
+    width: calc(32.5% - 18px);
+  }
 /*responsive*/
   @media only screen and (max-width: 1500px) {
-    mt-feature, footer {
+    [type="intro"], footer {
       font-size: 55px;
     }
   }
   @media only screen and (max-width: 1200px) {
-    [type="panel"] {
-      width: 45%;
+    [prominence="3"] {
+      width: calc(49% - 18px);
     }
   }
   @media only screen and (max-width: 850px) {
     body {
       font-size: 18px;
     }
-    [type="panel"] {
+    [prominence="2"],
+    [prominence="3"] {
       width: 100%;
     }
-    mt-feature, footer, section header h1 {
+    [type="intro"], footer, section header h1 {
       font-size: 36px;
     }
   }
@@ -181,7 +189,7 @@
     body, footer ul {
       font-size: 15px;
     }
-    mt-feature, footer, section header h1 {
+    [type="intro"], footer, section header h1 {
       font-size: 24px;
     }
     hr {
@@ -194,11 +202,11 @@
     body {
       font-size: 12px;
     }
-    mt-feature, footer {
+    [type="intro"], footer {
       font-size: 27px;
       display: block;
     }
-    mt-feature {
+    [type="intro"] {
       padding-bottom: 15px;
     }
     section header h1 {
@@ -216,7 +224,7 @@
       margin-bottom: 12px;
     }
     [type="panel"] {
-      width: 32%;
+      width: calc(32.5% - 18px);
     }
     [type="block"] {
       padding-bottom: 6px;

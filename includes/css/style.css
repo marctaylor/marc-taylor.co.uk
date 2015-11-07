@@ -183,11 +183,15 @@
     [type="panel"] {
       margin-right: 0px;
     }
+    main {
+      padding-left: 12%;
+      padding-right: 12%;
+    }
   }
   @media only screen and (max-width: 480px) {
     main {
-      padding-left: 15px;
-      padding-right: 15px;
+     /* padding-left: 15px;
+      padding-right: 15px;*/
       padding-top: 15%;
     }
     body, section ul, footer ul {
